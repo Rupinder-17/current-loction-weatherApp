@@ -18,9 +18,9 @@
           <!-- <input type="text" name="" class="py-1 w-" id="city-name" /> -->
           <button
             id="weatherBtn"
-            class="py-0.5 bg-yellow-400 text-white px-3 font-bold text-lg"
+            class="py-0.5 bg-red-800 text-white px-3 font-bold text-lg"
           >
-            Show current location weather
+            Fetch current weather 
           </button>
         </div>
 
@@ -41,7 +41,7 @@
 
           const weatherData = `
           <img src="${data.current.condition.icon}" class=" absolute left-32"/>
-          <h2 class="text-white font-bold text-3xl mt-14">${data.location.name}</h2>
+          <h2 class="text-white font-bold text-3xl mt-16">${data.location.name}</h2>
           <p class="text-yellow-500 text-xl font-semibold">${data.current.condition.text}</p>
           <p class="text-white text-xl font-semibold">${data.current.temp_c} °C</p>
           `;
